@@ -1,4 +1,5 @@
-import { Title, Text } from '@mantine/core';
+import { Title, Text, Anchor, Space, Button } from '@mantine/core';
+import Link from 'next/link';
 import useStyles from './Welcome.styles';
 
 export function Welcome() {
@@ -7,13 +8,15 @@ export function Welcome() {
   return (
     <>
       <Title className={classes.title} align="center" mt={100}>
-        Cuarto Plano{' '}
+        Location<Space h="xs" />
         <Text inherit variant="gradient" component="span">
-          Maps
+          Intelligence
         </Text>
       </Title>
       <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-        Comienza aquí.
+        <Link href="./dashboard" passHref>
+      <Anchor component="a"><Button>Ir al dashboard</Button></Anchor>
+    </Link>
       </Text>
     </>
   );

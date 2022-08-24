@@ -1,5 +1,6 @@
 import { IconGauge, IconFingerprint, IconLogout, IconFileSpreadsheet, IconMap } from '@tabler/icons';
 import { Box, NavLink, Slider, RangeSlider } from '@mantine/core';
+import Link from 'next/link';
 
 export default function Opciones() {
   return <Box sx={{ width: 240 }}>
@@ -35,11 +36,13 @@ export default function Opciones() {
       icon={<IconMap size={16} stroke={1.5} />}
       childrenOffset={28}
     />
+  <Link href="./" passHref>
   <NavLink
     label="Volver al inicio"
     icon={<IconLogout size={16} stroke={1.5} />}
     childrenOffset={28}
-  />
+    />
+    </Link>
   <Slider defaultValue={60} color="cyan" />
       <RangeSlider
         color="cyan"
