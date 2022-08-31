@@ -1,25 +1,25 @@
-import { AppShell, Burger, Header, MediaQuery, Navbar, Paper, Title, Code, useMantineTheme } from '@mantine/core';
+import { AppShell, Burger, Header, MediaQuery, Navbar, Title, Code, useMantineTheme } from '@mantine/core';
+import { useState } from 'react';
+import Link from 'next/link';
 import MapBasic from '../components/MapBasic';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { useState } from 'react';
 import Opciones from '../components/Opciones';
-import Link from 'next/link';
-
 
 export default function Dashboard() {
   const [opened, setOpened] = useState(false);
   const theme = useMantineTheme();
-  
+
   return (
     <>
     <AppShell
-          padding="md"
-          navbarOffsetBreakpoint="sm"
-          asideOffsetBreakpoint="sm"
-          fixed
-          navbar={<Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }}>
-          <Opciones /></Navbar>}
-          header={<Header height={100} p="xl">
+      padding="md"
+      navbarOffsetBreakpoint="sm"
+      asideOffsetBreakpoint="sm"
+      fixed
+      navbar={<Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }}>
+          <Opciones />
+              </Navbar>}
+      header={<Header height={100} p="xl">
           <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
               <Burger
                 opened={opened}
@@ -31,19 +31,19 @@ export default function Dashboard() {
           </MediaQuery>
             <Title order={2} weight={800} align="left" color="cyan">Location Intelligence</Title>
             <Link href="https://www.cuartoplano.com/" passHref>
-            <Code color="teal">by Cuarto Plano</Code></Link>
+            <Code color="teal">by Cuarto Plano</Code>
+            </Link>
 
-                  </Header>}
+              </Header>}
           // eslint-disable-next-line @typescript-eslint/no-shadow
-          styles={(theme) => ({
+      styles={(theme) => ({
         main: { backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0] },
       })}
-        >
-    <Paper shadow="md" p="md" withBorder>
+    >
+
       <MapBasic />
-    </Paper>
       <ColorSchemeToggle />
-        </AppShell>
+    </AppShell>
     </>
   );
 }

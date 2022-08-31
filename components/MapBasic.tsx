@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import { Box, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { mapboxClient } from '../services/mapbox';
+import useStyles from './MapContainer.styles';
 
 mapboxgl.accessToken = mapboxClient;
 
@@ -18,6 +19,7 @@ export default function MapBasic() {
   const [lng, setLng] = useState(-75.448446);
   const [lat, setLat] = useState(6.108381);
   const [zoom, setZoom] = useState(13);
+  const { classes } = useStyles();
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -28,6 +30,13 @@ export default function MapBasic() {
       zoom,
     });
   });
+
+  useEffect(() => {
+    if (map.current) return; // rezises
+  map.current.on('load', () => {
+    map.current.resize();
+  });
+});
 
   useEffect(() => {
     if (!map.current) return; // wait for map to initialize
@@ -42,7 +51,7 @@ export default function MapBasic() {
     <div>
       <Text>
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-      <Box ref={mapContainer} className="map-container" />
+      <div ref={mapContainer} className={classes.wrapper} />
       </Text>
     </div>
   );

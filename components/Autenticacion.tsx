@@ -4,20 +4,17 @@ import {
     Checkbox,
     Anchor,
     Paper,
-    Title,
-    Text,
     Container,
     Group,
     Button,
   } from '@mantine/core';
 import { IconBrandGoogle, IconUserCheck } from '@tabler/icons';
-  import { GoogleLoginButton  } from 'react-social-login-buttons';
-  
+
   export function Autenticacion() {
     return (
       <Container size={420} my={40}>
         <Paper withBorder shadow="md" p={30} mt={30} radius="md">
-          <TextInput label="Email" placeholder="paula.mesa@cuartoplano.com" required />
+          <TextInput label="Email" placeholder="email@cuartoplano.com" required />
           <Button fullWidth mt="xl" rightIcon={<IconUserCheck size={18} />}>
             Login con usuario
           </Button>

@@ -1,4 +1,4 @@
-import { Title, Text, Anchor, Space, Button } from '@mantine/core';
+import { Title, Text, Space, Button } from '@mantine/core';
 import Link from 'next/link';
 import useStyles from './Welcome.styles';
 
@@ -15,8 +15,8 @@ export function Welcome() {
       </Title>
       <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
         <Link href="./dashboard" passHref>
-      <Anchor component="a"><Button>Ir al dashboard</Button></Anchor>
-    </Link>
+      <Button component="a">Ir al dashboard</Button>
+        </Link>
       </Text>
     </>
   );

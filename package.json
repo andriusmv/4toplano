@@ -37,6 +37,7 @@
     "dayjs": "^1.11.0",
     "embla-carousel-react": "^7.0.0",
     "mapbox-gl": "^2.9.2",
+    "mapbox-gl-controls": "^2.3.5",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

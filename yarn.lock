@@ -2627,6 +2627,26 @@
   "resolved" "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz"
   "version" "1.1.2"
 
+"@turf/distance@6.3.0":
+  "integrity" "sha512-basi24ssNFnH3iXPFjp/aNUrukjObiFWoIyDRqKyBJxVwVOwAWvfk4d38QQyBj5nDo5IahYRq/Q+T47/5hSs9w=="
+  "resolved" "https://registry.npmjs.org/@turf/distance/-/distance-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+
+"@turf/helpers@^6.3.0", "@turf/helpers@^6.5.0":
+  "integrity" "sha512-VbI1dV5bLFzohYYdgqwikdMVpe7pJ9X3E+dlr425wa2/sMJqYDhTO++ec38/pcPvPE6oD9WEEeU3Xu3gza+VPw=="
+  "resolved" "https://registry.npmjs.org/@turf/helpers/-/helpers-6.5.0.tgz"
+  "version" "6.5.0"
+
+"@turf/invariant@^6.3.0":
+  "integrity" "sha512-Wv8PRNCtPD31UVbdJE/KVAWKe7l6US+lJItRR/HOEW3eh+U/JwRCSUl/KZ7bmjM/C+zLNoreM2TU6OoLACs4eg=="
+  "resolved" "https://registry.npmjs.org/@turf/invariant/-/invariant-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
 "@types/aria-query@^4.2.0":
   "integrity" "sha512-HnYpAE1Y6kRyKM/XkEuiRQhTHvkzMBurTHnpFLYLBGPIylZNPs9jJcuOOYWxPLJCSEtmZT0Y8rHDokKN7rRTig=="
   "resolved" "https://registry.npmjs.org/@types/aria-query/-/aria-query-4.2.2.tgz"
@@ -8207,7 +8227,14 @@
   dependencies:
     "object-visit" "^1.0.0"
 
-"mapbox-gl@^2.9.2":
+"mapbox-gl-controls@^2.3.5":
+  "integrity" "sha512-FP4c7WhNoE+5JicMkq8TSqJwaxEpkhJlsq4Ye1lIGBy7ubS/l6EZ15ZRumrICpDZGOMMlfKKCpaCo+Kt5omkTg=="
+  "resolved" "https://registry.npmjs.org/mapbox-gl-controls/-/mapbox-gl-controls-2.3.5.tgz"
+  "version" "2.3.5"
+  dependencies:
+    "@turf/distance" "6.3.0"
+
+"mapbox-gl@^2.9.2", "mapbox-gl@>=1.0.0 <3.0.0":
   "integrity" "sha512-RQOUB+l8p5sUyR+vRdd4aRY1/nwOhyYxSWThr2bjXW8u8QtN4cjrb/R7W+CkLyoscISjkSvCS22nDAO69s5T4Q=="
   "resolved" "https://registry.npmjs.org/mapbox-gl/-/mapbox-gl-2.9.2.tgz"
   "version" "2.9.2"
