@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import { Button, CopyButton } from '@mantine/core';
+import { Button } from '@mantine/core';
 import { mapboxClient } from '../services/mapbox';
 import useStyles from './MapContainer.styles';
 
@@ -49,13 +49,11 @@ export default function MapBasic() {
 
   return (
     <><div>
-          <CopyButton value={map.current.getCenter().lng}>
-      {({ copied, copy }) => (
-        <Button color={copied ? 'teal' : 'blue'} onClick={copy}>
-          {copied ? 'Coordenadas copiadas!' : 'Copiar coordenadas'}
+
+        <Button>
+Copiar coordenadas
         </Button>
-      )}
-          </CopyButton>
+
       <Button variant="default">
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       </Button>
