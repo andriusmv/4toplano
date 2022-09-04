@@ -1,4 +1,4 @@
-import { IconTableShortcut, IconTableOptions, IconLogout, IconBabyCarriagelabel } from '@tabler/icons';
+import { IconTableShortcut, IconTableOptions, IconLogout } from '@tabler/icons';
 import { Box, NavLink } from '@mantine/core';
 import Link from 'next/link';
 
