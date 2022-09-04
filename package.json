@@ -32,6 +32,7 @@
     "@next/bundle-analyzer": "^12.1.4",
     "@supabase/supabase-js": "^1.35.6",
     "@tabler/icons": "^1.78.1",
+    "@types/geojson": "^7946.0.10",
     "@types/mapbox-gl": "^2.7.5",
     "cookies-next": "^2.1.1",
     "dayjs": "^1.11.0",
