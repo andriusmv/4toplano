@@ -12,7 +12,7 @@ export default function Dashboard() {
   return (
     <>
     <AppShell
-      padding="md"
+      padding="xs"
       navbarOffsetBreakpoint="sm"
       asideOffsetBreakpoint="sm"
       fixed

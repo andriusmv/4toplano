@@ -17,9 +17,9 @@ export default createStyles((theme) => ({
 
     wrapper: {
         // subscribe to color scheme changes right in your styles
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
+        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[1],
         height: 'auto',
         minHeight: '100%',
-        overflow: 'auto',
+        overflow: 'hidden',
     },
 }));

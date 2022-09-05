@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import { Button } from '@mantine/core';
+import { Button, Code, Container } from '@mantine/core';
 import { mapboxClient } from '../services/mapbox';
 import useStyles from './MapContainer.styles';
 
@@ -48,16 +48,17 @@ export default function MapBasic() {
   });
 
   return (
-    <><div>
+      
+      <Container fluid ref={mapContainer} className={classes.wrapper} px={0}>
+    <div>
 
-        <Button>
+        <Button compact size="xs" color="teal">
 Copiar coordenadas
         </Button>
 
-      <Button variant="default">
-        Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-      </Button>
-      </div><div ref={mapContainer} className={classes.wrapper} />
-    </>
+      <Code>
+      Latitude: {lat} | Longitude: {lng} | Zoom: {zoom}
+      </Code></div>
+    </Container>
   );
 }
