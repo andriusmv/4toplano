@@ -5,6 +5,7 @@ import { getCookie, setCookie } from 'cookies-next';
 import Head from 'next/head';
 import { NotificationsProvider } from '@mantine/notifications';
 import { ColorScheme, ColorSchemeProvider, MantineProvider, useMantineTheme } from '@mantine/core';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;

@@ -48,7 +48,7 @@ export default function MapBasic() {
   });
 
   return (
-      
+
       <Container fluid ref={mapContainer} className={classes.wrapper} px={0}>
     <div>
 
@@ -57,8 +57,9 @@ Copiar coordenadas
         </Button>
 
       <Code>
-      Latitude: {lat} | Longitude: {lng} | Zoom: {zoom}
-      </Code></div>
-    </Container>
+      {lat}, {lng}
+      </Code>
+    </div>
+      </Container>
   );
 }

@@ -37,11 +37,14 @@
     "cookies-next": "^2.1.1",
     "dayjs": "^1.11.0",
     "embla-carousel-react": "^7.0.0",
-    "mapbox-gl": "^2.9.2",
+    "mapbox-gl": "^2.10.0",
     "mapbox-gl-controls": "^2.3.5",
+    "maplibre-gl": "^2.4.0",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-map-gl": "^7.0.19",
+    "react-mapbox-gl": "^5.1.1",
     "react-social-login-buttons": "^3.6.1"
   },
   "devDependencies": {

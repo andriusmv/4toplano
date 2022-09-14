@@ -1,7 +1,6 @@
-import { AppShell, Burger, Header, MediaQuery, Navbar, Title, Code, useMantineTheme, Grid } from '@mantine/core';
+import { AppShell, Burger, Header, MediaQuery, Navbar, Title, useMantineTheme, Grid } from '@mantine/core';
 import { useState } from 'react';
-import Link from 'next/link';
-import MapBasic from '../components/MapBasic';
+import MapCanvas from '../components/MapCanvas';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 import Opciones from '../components/Opciones';
 
@@ -20,23 +19,20 @@ export default function Dashboard() {
           <Opciones />
           <ColorSchemeToggle />
               </Navbar>}
-      header={<Header height={100} p="xl">
+      header={<Header height={70} p="xs">
         <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
-          <Grid justify="space-around" align="center">
-            <Grid.Col span={3} style={{ minHeight: 70 }}>
+          <Grid grow align="center">
+            <Grid.Col span={1} style={{ minHeight: 30 }}>
               <Burger
                 opened={opened}
                 onClick={() => setOpened((o) => !o)}
-                size="xl"
+                size="md"
                 color={theme.colors.gray[6]}
-                mr="xl"
+                mr="xs"
               />
             </Grid.Col>
-            <Grid.Col span={3} style={{ minHeight: 70 }}>
-              <Title order={3} weight={800} align="left" color="cyan">Location Intelligence</Title>
-            </Grid.Col>
-            <Grid.Col span={3} style={{ minHeight: 70 }}>
-              <Code color="teal">ⒸCuartoPlano</Code>
+            <Grid.Col span={6} style={{ minHeight: 30 }}>
+              <Title order={6} weight={800} align="left" color="cyan">4ºP – Location Intelligence</Title>
             </Grid.Col>
           </Grid>
 
@@ -44,10 +40,7 @@ export default function Dashboard() {
 
           <Grid justify="space-around" align="left">
             <Grid.Col span={12} style={{ minHeight: 70 }}>
-              <Title order={2} weight={800} align="left" color="cyan">Location Intelligence</Title>
-              <Link href="https://www.cuartoplano.com/" passHref>
-                <Code color="teal">by Cuarto Plano</Code>
-              </Link>
+              <Title order={2} weight={800} align="left" color="cyan">4ºP – Location Intelligence</Title>
             </Grid.Col>
           </Grid>
                      </MediaQuery>
@@ -59,7 +52,7 @@ export default function Dashboard() {
       })}
     >
 
-      <MapBasic />
+      <MapCanvas />
     </AppShell>
     </>
   );
