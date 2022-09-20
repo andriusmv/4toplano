@@ -9,10 +9,10 @@ export default function Opciones() {
     icon={<IconTableOptions size={16} stroke={1.5} />}
     childrenOffset={28}
   >
-    <NavLink label="Pequeños (hasta 1 Ha)" icon={<Avatar src="../E85C90.jpg" alt="pequeños" size="xs" />}/>
-    <NavLink label="Medianos (hasta 10 Ha)" icon={<Avatar src="../B88DAF.jpg" alt="medianos" size="xs" />}/>
-    <NavLink label="Grandes (hasta 100 Ha)" icon={<Avatar src="../88BECD.jpg" alt="grandes" size="xs" />}/>
-    <NavLink label="Muy Grandes (hasta 500 Ha)" icon={<Avatar src="../58EFEC.jpg" alt="muy grandes" size="xs" />}/>
+    <NavLink label="Pequeños (hasta 1 Ha)" icon={<Avatar src="E85C90.jpg" alt="pequeños" size="xs" />}/>
+    <NavLink label="Medianos (hasta 10 Ha)" icon={<Avatar src="B88DAF.jpg" alt="medianos" size="xs" />}/>
+    <NavLink label="Grandes (hasta 100 Ha)" icon={<Avatar src="88BECD.jpg" alt="grandes" size="xs" />}/>
+    <NavLink label="Muy Grandes (hasta 500 Ha)" icon={<Avatar src="58EFEC.jpg" alt="muy grandes" size="xs" />}/>
   </NavLink>
   <NavLink
     label="Filtrar por tipo"
