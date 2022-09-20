@@ -32,7 +32,7 @@ export default function Dashboard() {
               />
             </Grid.Col>
             <Grid.Col span={6} style={{ minHeight: 30 }}>
-              <Title order={6} weight={800} align="left" color="cyan">4ºP – Location Intelligence</Title>
+              <Title order={6} weight={800} align="left" variant="gradient">4ºP – Location Intelligence</Title>
             </Grid.Col>
           </Grid>
 
@@ -40,7 +40,7 @@ export default function Dashboard() {
 
           <Grid justify="space-around" align="left">
             <Grid.Col span={12} style={{ minHeight: 70 }}>
-              <Title order={2} weight={800} align="left" color="cyan">4ºP – Location Intelligence</Title>
+              <Title order={2} weight={800} align="left" variant="gradient">4ºP – Location Intelligence</Title>
             </Grid.Col>
           </Grid>
                      </MediaQuery>
