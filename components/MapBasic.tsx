@@ -18,7 +18,7 @@ export default function MapBasic() {
   const map = useRef<mapboxgl.Map | any>(null);
   const [lng, setLng] = useState(-75.448446);
   const [lat, setLat] = useState(6.108381);
-  const [zoom, setZoom] = useState(13);
+  const [zoom, setZoom] = useState(10);
   const { classes } = useStyles();
 
   useEffect(() => {
